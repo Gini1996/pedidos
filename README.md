@@ -20,15 +20,8 @@ Como parte do desafio, desenvolvi APIs para cada um dos requisitos, estas que se
 > + É necessario possuir uma [IDE Java](https://spring.io/tools) de sua preferência. 
 > + Ter um banco de dados [PostgreSQL](https://www.postgresql.org/download/) instalado em sua máquina e devidamente configurado no properties do projeto.
 
-## APIs Desenvolvidas
-[Relatorio](http://localhost:8080/pedidos)
-
-
-[Consulta](http://localhost:8080/pedidos/1) -> Para localizar outro pedido basta passar o numero do outro pedido que deseja visualizar.
-
-
-[Cadastro](http://localhost:8080/pedidos/cadastro) 
-> [!IMPORTANT]
+## JSON de Cadastro
+Caso queira testar o cadastro de forma isolada, sem o repositório do frontend, via Postman é necessário seguir o padrão:
 > {
 >    "pedido": 0,
 >    "item": "TextoAqui",
