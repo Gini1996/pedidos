@@ -38,7 +38,7 @@ public class PedidoController
 	}
 	
 	@PostMapping("/cadastro")
-	public ResponseEntity<String> addTpDenuncia(@RequestBody PedidosDTO body)
+	public ResponseEntity<String> cadastro(@RequestBody PedidosDTO body)
 	{
 		pedidosService.cadastroPedido(body.getPedido(),body.getItem(), body.getQuantidade());
 		return ResponseEntity.status(HttpStatus.OK).body("Pedido cadastrado com sucesso.");   
